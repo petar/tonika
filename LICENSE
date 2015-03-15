@@ -1,4 +1,8 @@
+<<<<<<< HEAD
                     GNU AFFERO GENERAL PUBLIC LICENSE
+=======
+GNU AFFERO GENERAL PUBLIC LICENSE
+>>>>>>> 81326f2c3fdb4bd4b197d3f72e7b7f25418fd869
                        Version 3, 19 November 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
@@ -633,8 +637,13 @@ the "copyright" line and a pointer to where the full notice is found.
     Copyright (C) <year>  <name of author>
 
     This program is free software: you can redistribute it and/or modify
+<<<<<<< HEAD
     it under the terms of the GNU Affero General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
+=======
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+>>>>>>> 81326f2c3fdb4bd4b197d3f72e7b7f25418fd869
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -659,3 +668,7 @@ specific requirements.
 if any, to sign a "copyright disclaimer" for the program, if necessary.
 For more information on this, and how to apply and follow the GNU AGPL, see
 <http://www.gnu.org/licenses/>.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 81326f2c3fdb4bd4b197d3f72e7b7f25418fd869
