@@ -1,0 +1,13 @@
+body {
+	background-image: url("/static/castles4.jpg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+}
+
+div#screen {
+	background: #eeddee;
+	border: 2px solid #ddccdd;
+}
+pre {
+	color: #776677;
+}

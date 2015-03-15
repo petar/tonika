@@ -1,0 +1,196 @@
+
+===== 1 sec ========
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:163 (Mutex):
+	1.642547e+08 ±(3.596951e+08)ns,	#(6),	?(0)
+
+===== 1/10 sec =====
+/Users/petar/Tonika-hg/src/pkg/core/dump.go:50 (Mutex):
+	4.435567e+07 ±(9.805757e+07)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:111 (Mutex):
+	1.052483e+07 ±(4.131724e+07)ns,	#(18),	?(0)
+
+===== 1/100 sec ====
+/Users/petar/Tonika-hg/src/pkg/vault/vault.go:112 (Mutex):
+	6.035000e+06 ±(8.203073e+06)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:229 (Mutex):
+	6.026500e+06 ±(1.755757e+07)ns,	#(12),	?(0)
+/Users/petar/Tonika-hg/src/pkg/vault/vault.go:92 (Mutex):
+	1.974625e+06 ±(2.390707e+06)ns,	#(16),	?(0)
+/Users/petar/Tonika-hg/src/cmd/tonika/main.go:87 (Mutex):
+	1.764000e+06 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dump.go:128 (Mutex):
+	1.436250e+06 ±(2.797342e+06)ns,	#(12),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/core.go:156 (Mutex):
+	1.435500e+06 ±(7.355000e+05)ns,	#(2),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:160 (Mutex):
+	1.177211e+06 ±(8.393946e+06)ns,	#(57),	?(0)
+
+===== 1/1000 sec ===
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:108 (Mutex):
+	8.421111e+05 ±(2.310438e+06)ns,	#(9),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:174 (Mutex):
+	7.650000e+05 ±(1.026258e+06)ns,	#(3),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/core.go:131 (Mutex):
+	6.880000e+05 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:238 (Mutex):
+	6.055000e+05 ±(1.869030e+06)ns,	#(12),	?(0)
+/Users/petar/go/src/pkg/runtime/proc.c:141 (Mutex):
+	5.858815e+05 ±(1.051173e+07)ns,	#(346),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:93 (Mutex):
+	5.775833e+05 ±(8.533897e+05)ns,	#(36),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:295 (Mutex):
+	4.815000e+05 ±(7.605763e+05)ns,	#(4),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:119 (Mutex):
+	2.635196e+05 ±(4.769871e+06)ns,	#(716),	?(0)
+/Users/petar/Tonika-hg/src/pkg/compass/compass.go:266 (Mutex):
+	2.419444e+05 ±(6.074269e+05)ns,	#(18),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:379 (Mutex):
+	2.415000e+05 ±(4.650000e+04)ns,	#(2),	?(0)
+/Users/petar/Tonika-hg/src/pkg/compass/compass.go:260 (Mutex):
+	1.827895e+05 ±(6.549946e+05)ns,	#(19),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:177 (Mutex):
+	1.753333e+05 ±(3.080810e+05)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:184 (Mutex):
+	1.650000e+05 ±(1.424481e+05)ns,	#(40),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:95 (Mutex):
+	1.348235e+05 ±(5.123427e+05)ns,	#(17),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:235 (Mutex):
+	1.058333e+05 ±(6.205217e+04)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:114 (Mutex):
+	1.050000e+05 ±(9.000000e+03)ns,	#(2),	?(0)
+
+===== FAST =========
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:103 (Mutex):
+	9.788889e+04 ±(5.604055e+04)ns,	#(18),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:177 (Mutex):
+	9.266667e+04 ±(6.043362e+04)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:377 (Mutex):
+	9.000000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/compass/compass.go:276 (Mutex):
+	8.700000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:123 (Mutex):
+	7.325000e+04 ±(2.412856e+04)ns,	#(4),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:354 (Mutex):
+	7.200000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:152 (Mutex):
+	7.166667e+04 ±(2.007209e+04)ns,	#(3),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/core.go:118 (Mutex):
+	6.400000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dump.go:51 (Mutex):
+	6.390476e+04 ±(8.443081e+04)ns,	#(21),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:169 (Mutex):
+	5.800000e+04 ±(2.963106e+04)ns,	#(3),	?(0)
+/Users/petar/Tonika-hg/src/pkg/vault/vault.go:77 (Mutex):
+	5.033333e+04 ±(2.206052e+04)ns,	#(9),	?(0)
+/Users/petar/Tonika-hg/src/pkg/http/aserver.go:95 (Mutex):
+	5.000000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/dump.go:54 (Mutex):
+	4.916667e+04 ±(9.855906e+03)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/http/aserverconn.go:60 (Mutex):
+	3.950000e+04 ±(2.248333e+04)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/vault/vault.go:81 (Mutex):
+	3.755556e+04 ±(2.203589e+04)ns,	#(9),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/core.go:154 (Mutex):
+	3.500000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:258 (Mutex):
+	3.130000e+04 ±(3.652958e+04)ns,	#(10),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:356 (Mutex):
+	2.900000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/dump.go:73 (Mutex):
+	2.850000e+04 ±(5.121116e+04)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/vault/vault.go:65 (Mutex):
+	2.800000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:355 (Mutex):
+	2.600000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:350 (Mutex):
+	2.500000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dump.go:64 (Mutex):
+	2.357500e+04 ±(3.793992e+03)ns,	#(40),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/core.go:360 (Mutex):
+	2.300000e+04 ±(1.721918e+04)ns,	#(4),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:412 (Mutex):
+	1.900000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:358 (Mutex):
+	1.900000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/http/aserver.go:153 (Mutex):
+	1.800000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/fe/fe.go:88 (Mutex):
+	1.700000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:242 (Mutex):
+	1.662500e+04 ±(3.199121e+03)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/dump.go:45 (Mutex):
+	1.633333e+04 ±(2.540779e+04)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:492 (Mutex):
+	1.500000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dump.go:140 (Mutex):
+	1.460950e+04 ±(4.711177e+04)ns,	#(484),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:202 (Mutex):
+	1.450000e+04 ±(5.916080e+03)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:378 (Mutex):
+	1.400000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/handoff.go:67 (Mutex):
+	1.344094e+04 ±(7.357736e+03)ns,	#(127),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:168 (Mutex):
+	1.333333e+04 ±(3.712641e+04)ns,	#(54),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:198 (Mutex):
+	1.300000e+04 ±(7.788881e+03)ns,	#(3),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:113 (Mutex):
+	1.200000e+04 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/core/core.go:359 (Mutex):
+	1.150000e+04 ±(5.000000e+02)ns,	#(2),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:182 (Mutex):
+	1.020833e+04 ±(3.839703e+04)ns,	#(48),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:170 (Mutex):
+	9.949791e+03 ±(9.774315e+03)ns,	#(239),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/handoff.go:221 (Mutex):
+	8.420561e+03 ±(8.677544e+03)ns,	#(214),	?(0)
+/Users/petar/Tonika-hg/src/pkg/compass/compass.go:109 (Mutex):
+	7.615385e+03 ±(1.808118e+04)ns,	#(26),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dump.go:103 (Mutex):
+	7.166667e+03 ±(9.770989e+03)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/vault/vault.go:113 (Mutex):
+	7.125000e+03 ±(6.248750e+03)ns,	#(32),	?(0)
+/Users/petar/Tonika-hg/src/pkg/fe/fe.go:112 (Mutex):
+	5.833333e+03 ±(6.452820e+03)ns,	#(12),	?(0)
+/Users/petar/Tonika-hg/src/pkg/vault/watch.go:170 (Mutex):
+	5.333333e+03 ±(5.676462e+03)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/compass/compass.go:102 (Mutex):
+	4.673077e+03 ±(9.860023e+03)ns,	#(52),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:437 (Mutex):
+	3.888889e+03 ±(3.956554e+03)ns,	#(9),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:213 (Mutex):
+	3.555556e+03 ±(3.370167e+03)ns,	#(9),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:403 (Mutex):
+	3.222222e+03 ±(3.823256e+03)ns,	#(9),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:176 (Mutex):
+	3.000000e+03 ±(2.000000e+03)ns,	#(2),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:80 (Mutex):
+	3.000000e+03 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/http/aserverconn.go:94 (Mutex):
+	2.875000e+03 ±(2.204399e+03)ns,	#(16),	?(0)
+/Users/petar/Tonika-hg/src/pkg/http/aserverconn.go:86 (Mutex):
+	2.500000e+03 ±(5.000000e+02)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/http/aserverconn.go:142 (Mutex):
+	2.375000e+03 ±(1.111024e+03)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/tel.go:104 (Mutex):
+	2.111111e+03 ±(1.448712e+03)ns,	#(9),	?(0)
+/Users/petar/Tonika-hg/src/pkg/vault/vault.go:293 (Mutex):
+	2.000000e+03 ±(5.773503e+02)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/dialer.go:81 (Mutex):
+	2.000000e+03 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/http/aclient.go:89 (Mutex):
+	2.000000e+03 ±(0.000000e+00)ns,	#(1),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/handoff.go:158 (Mutex):
+	2.000000e+03 ±(0.000000e+00)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:444 (Mutex):
+	1.875000e+03 ±(3.307189e+02)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/handoff.go:122 (Mutex):
+	1.873563e+03 ±(8.550674e+02)ns,	#(87),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/handoff.go:183 (Mutex):
+	1.750000e+03 ±(4.330127e+02)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/vault/vault.go:284 (Mutex):
+	1.666667e+03 ±(4.714045e+02)ns,	#(6),	?(0)
+/Users/petar/Tonika-hg/src/pkg/http/aserverconn.go:107 (Mutex):
+	1.625000e+03 ±(4.841229e+02)ns,	#(8),	?(0)
+/Users/petar/Tonika-hg/src/pkg/dialer/conn.go:176 (Mutex):
+	1.000000e+03 ±(0.000000e+00)ns,	#(1),	?(0)

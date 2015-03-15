@@ -1,0 +1,58 @@
+
+DIALER
+	(*) Bug, shows 57 descriptors in use (57/100), but monitor shows about 10 connections in detail
+	(*) Ping conn's from time to time to make sure alive
+
+FE
+	(*) Response invitation should be much shorter than first one
+	(*) Accept link without Tonika running should be more descriptive
+	(*) Add stats with Google Charts
+
+MAIN
+	(*) By default, resource files should be expected to be in the same directory as
+	the executable
+
+	(*) By default, expect/create home and cache directory in HOME/MyTonika
+
+(*) Bug, there are 4 busy connections, when only one download is happening (2 extra?)
+
+(*) Tonika seg-faults on POST requests in Wordpress (perhaps?)
+
+
+== REFINEMENTS ====== 
+
+(Resolved with a hack) Bug caused by repeated Ctrl-R on the browser? Still there? Yeah, some 
+   connections remain in busy state.
+    -- Handoff never receives a close or kill. 
+    -- Seems like there is a kill on the other side, which does not show up on our side.
+    -- Idea: attach handoff names and track on both sides.
+
+(*) CACHING
+
+(*) Design API for:
+	(*) DOWNLOAD MANAGER
+	(*) TWEETING INTERFACE
+	(*) FUSE INTERFACE
+	(*) Automatic index.html listing files
+
+=====================
+
+BELLS & WHISTLES
+
+(*) custom size private keys and/or faster,portable randomness source
+(-) CORE
+	(*) monitor for errors on dialer and somehow notify user
+(*) twitter-like publishing system
+(*) web authentication for logging in to admin from a remote location
+
+FUTURE
+
+(*) API for custom services
+(*) browse WWW through Tonika (so people in censored countries can have un-censored access)
+(*) pause/resume for large downloads
+	(*) content caching
+	(*) multi-part encoding
+	(*) gzipping?
+(*) libjingle connection server
+(*) automatic updates
+	(*) make program a single file (with embedded resource files)

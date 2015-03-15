@@ -1,0 +1,39 @@
+body {
+	background-image: url("/static/ship2.jpg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+}
+
+.dick ul {
+	margin-top: 20px;
+}
+
+.dock .wrapper { padding: 0; margin: 0; margin-top: 30px; }
+
+.dock li {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	display: inline-block;
+	font-size: 1.1em;
+}
+
+.dock .ok {
+	display: inline;
+	padding: 7px;
+}
+
+.dock .nop {
+	padding: 7px;
+	display: inline;
+	color: #bbb;
+}
+
+div#home {
+	background: #ffeeff;
+	border: 2px solid #eeddee;
+}
+
+div#live p {
+	padding: 10px;
+	color: #662277;
+}

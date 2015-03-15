@@ -1,0 +1,2 @@
+#!/bin/sh
+${TONIKAROOT}/src/all.bash && ./s1.bash

@@ -1,0 +1,55 @@
+--- Crucial ---
+
+(*) do an fdlimiter test on new stuff
+
+--- Less crucial ---
+
+(*) 0-length body (in responses) currently results in no ContentLength key, but
+    browsers wait for a while when they see a response without that key. So maybe it
+    should be included.
+(*) Monitor ACC's, #pending, expected wait time for any next request
+(*) Avoid multiple small writes during request send
+(*) splitting code may have to optionally work on "," only because ";" usually 
+    separates params that pertain to the same token
+(*) fix maxlinelength > bufio.size issue
+(*) if Req.Header has "Content-Length: 7", write does not catch mistake if
+    missing body.
+(*) Response.Write writes Content-Length (if given), even when chunked encoding
+    happening
+(*) Response.Write does not write Connection: close, when Close=true,
+    encoding=chunked, HTTP=1.1
+(*) Attach an error check to all write's in Resp/Req.Write to avoid the EPIPE problem
+(*) urlEncode does not follow latest standard and does not work with some sites, 
+    see gmail with russ. Issue 614.
+
+(*) trailer reader
+	(*) prep code in Request
+	(*) actual reader in both Resp and Req
+(*) transfer-encoding & trailer value splitting
+
+RESOLVED
+
+(.) Encoding should not be forced to chunked
+(.) Request should use chunkWriter code not manual
+(.) body.Close can be called repeatedly and should replicate last error msg (is the case)
+(.) fix URL parser to accept all 4 varieties (no, just use rawurl)
+(.) make Request.Body a read-closer
+(.) ReadRequest/Resp must populate URL.Host with Host
+(.) If port != 80, must be populated under Host field (works even when :80 not removed)
+(.) lowercase methods not accepted (ok, gws)
+(.) lowercase http version not accepted (ok, gws)
+(.) UserAgent always present (ok)
+(.) ContentLength/Body sanitiz on Request.Write as well
+(.) Unify Req/Resp transfer reading logic
+(.) When an ASC is writing a response, if an error occurs on the
+    wire, ASC write-loop exits without closing the body
+	(.) Possibly a similar problem in ACC
+(.) Seems that onFetch blocks on the mux. Did a cleanup of locks on aclient.
+(.) ACC connections don't time out b/c write-loop is waiting for fetch, and
+    read-loop is waiting for strobe on pch, so TCP timeout does not kick-in
+(.) ACC automatically reject responses if pch buffer is about to get full and block
+(.) Allow multiple client connections in AClient.
+(.) If lagging still exists, write profiling object
+(.) ASC make sure it doesn't wait in write-loop select if read-side is broken and
+    there are no outstanding requests. (eye-checked it for now)
+(.) Limit #fd

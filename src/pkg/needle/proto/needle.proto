@@ -1,0 +1,6 @@
+package proto;
+
+// Ping from client to needle server
+message Ping {
+	required int64        Id = 1;
+}

@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>{Title}</title>
+    <link href="/static/favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+    <link href="/static/favicon.ico" type="image/x-icon" rel="icon" /> 
+    <link rel="stylesheet" href="/static/css/reset.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/static/css/grid.css" type="text/css" media="screen, projection" />
+    <!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="/static/main.css" type="text/css" />
+
+    {.repeated section CSSLinks}
+        <link rel="stylesheet" type="text/css" href="/static/{@}" /> 
+    {.end}
+    <script type="text/javascript" src="/static/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/static/urlEncode.js"></script>
+    <script type="text/javascript" src="/static/main.js"></script>
+    {.repeated section JSLinks}
+        <script type="text/javascript" src="/static/{@}"></script>
+    {.end}
+  </head>
+
+  <body>
+    <div class="container">
+        <div id="header" class="span-24 last">
+          &nbsp;
+        </div>
+        {Content}
+    </div>
+    {GridLayout}
+  </body>
+</html>

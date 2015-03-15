@@ -1,0 +1,54 @@
+DESIGN
+
+(*) Say a mux object receives commands on a channel, with each command carrying
+a notify back-channel. If the back-channels are buffered with 1 element, then
+the mux can always send a result back without blocking.
+
+(*) If you need to select on a mixture of channels and connections, convert
+each connection into a channel.
+
+BEHAVIOR
+
+(*) When implementing an io.Reader (or io.Writer) interface, read the GO
+specification very very carefully. One subtlety: A Read() (or Write())
+request that returns a non-nil error, should still return a non-negative
+number of bytes read (or written) to reflect what was actually done.
+It will return 0 if no bytes were read (written). Notice that a Read/Write
+request never returns a negative number (unlike in C/POSIX). If you return
+a negative number, there will be hard to find bugs, because all IO-related
+stuff (like bufio.Buffer, etc.) rely on proper behavior of io.Reader/Writer
+interfaces, and have hard-to-predict behavior otherwise.
+
+(*) (Unlike net.Conn, below) A bufio.Reader will NOT return from Read
+until it can read exactly as many bytes as requested.
+
+(*) A net.Conn, which is not configured to timeout, will return from Read
+whenever there is partial input, without an error.
+
+(*) Anonymous functions see the actual variables, not just values, from the
+scope where they were defined. E.g.
+
+func exp() {
+	x := 0
+	done := make(chan bool)
+	go func() {
+		x = 5
+		done <- true
+	}()
+	<-done
+	println(x)
+} 
+
+outputs "5".
+
+
+(*) If a channel has been closed, a blocking send to it succeeds right away.
+
+(*) If a channel is closed, outstanding blocking receives return immediately
+with zero.
+
+(*) len(nil) == 0 for nil slices.
+
+(*) A common cause of Go program's silent death is making too many write calls
+to a closed descriptor. See "nepipe" in os/file.go. In such cases the program
+exits with error code 32 (EPIPE).

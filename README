@@ -1,0 +1,67 @@
+
+Tonika Build and Run Instructions
+=================================
+
+
+Building Tonika
+---------------
+
+Tonika can be built on any platform supported by the Google Go Programming Language
+[http://golang.org], which currently includes Mac OS X, Linux and FreeBSD (32-bit and 
+64-bit in all cases). To build Tonika, proceed as follows:
+
+  (1) Download and install Google Go
+
+  (2) Download Tonika's sources. Using Mercurial, this done with the command:
+
+      hg clone https://tonika.googlecode.com/hg/ tonika
+
+  (3) Set the environment variable TONIKAROOT to point to the root of Tonika's 
+  source distribution, e.g.
+
+      setenv TONIKAROOT /Users/petar/tonika      (csh/tcsh)
+      export TONIKAROOT /Users/petar/tonika      (sh/bash)
+
+  (4) Change your directory to the root of the Tonika's Go sources:
+
+      cd tonika/src
+
+  (5) Compile everything:
+
+      ./all.bash
+
+  (6) You are done! The Tonika executable is in:
+
+      tonika/src/cmd/tonika/tonika
+
+
+Running Tonika
+--------------
+
+Currently the best way to see how to run Tonika is to look at the script
+
+      tonika/src/s0.bash
+
+which runs Tonika for an example user whose home and other directories are in
+
+      tonika/src/u0/...
+
+
+LICENSE
+-------
+
+Tonika: A distributed social networking platform
+Copyright (C) 2010 Petar Maymounkov <petar@5ttt.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

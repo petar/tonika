@@ -1,0 +1,87 @@
+
+<div class="span-6">
+	<div class="span-5 quick last tspan-1">
+		<ul>
+			<li><a href="{AdminURL}/neighbors">Neighborhood</a></li>
+			<li><a href="{AdminURL}/">Admin</a></li>
+			<li><a href="{AdminURL}/add">Add contact</a></li>
+			<li><a href="{AdminURL}/monitor">Monitor</a></li>
+			<li><a href="{AdminURL}/bug">Report a bug</a></li>
+		</ul>
+	</div>
+	<div class="span-5 quick2 last tspan-1">
+		<ul>
+		    <li><a href="http://5ttt.org"><img src="/static/logo-icon.png" /> Tonika</a></li>
+		    <li><a href="http://blogtonika.wordpress.com"><img src="/static/wp-icon.png" /> Blog Tonika</a></li>
+		    <li><a href="http://twitter.com/5ttt"><img src="/static/tw2-icon.png" /> Follow on Twitter</a></li>
+		    <li><a href="http://www.facebook.com/pages/Tonika/119725644714946"><img src="/static/fb-icon.png" /> Facebook page</a></li>
+		    <li><a href="http://groups.google.com/group/5ttt"><img src="/static/gg-icon.png" /> Google group</a></li>
+		</ul>
+	</div>
+</div>
+<div class="prepend-2 span-16 last tspan-1">
+	<h1>Your details</h1>
+	<div class="span-16 last">
+		<h3>Your URL:</h3>
+		<span class="code"><a href="http://{MyId}.5ttt.org">http://{MyId}.5ttt.org</a></span>
+	</div>
+	<div class="span-16 last">
+		<h3>Your name:</h3>
+		<input id="my_name" name="my_name" type="text" value="{MyName}" size="40" maxlength="100" tabindex="1"><br>
+		<span class="subdue">We use this to fill your name in invitations to your friends.</span>
+	</div>
+
+	<div class="span-16 last tspan-1">
+		<h3>Your email:</h3>
+		<input id="my_email" name="my_email" type="text" value="{MyEmail}" size="40" maxlength="100" tabindex="2"><br>
+		<span class="subdue">We use this to fill your email in invitations to your friends.</span>
+	</div>
+
+	<div class="span-16 last">
+		<h3>Your Tonika server is bound to:</h3>
+		{MyAddr}<br>
+		<span class="subdue">You can change this by re-running Tonika with the
+		<span class="code">--addr=[address]</span> option.</span>
+	</div>
+
+	<div class="span-16 last tspan-1">
+		<h3>Your Internet address:</h3>
+		<input id="my_addr" name="my_addr" type="text" value="{MyExtAddr}" size="40" maxlength="100" tabindex="2"><br>
+		<span class="subdue">If you know the address and port under which your Tonika server is
+		visible to the outside Internet, enter it here. Some examples:
+		<span class="code">myurl.com:666</span>,
+		<span class="code">1.2.3.4:666</span>,
+		<span class="code">[de:ad:be:ef::ca:fe]:80</span> (this is IPv6).
+		Currently only one address/port can be entered. Do not use a comma-separated list.
+		</span>
+	</div>
+	<div class="prepend-4 span-12 last tspan-1">
+		<input type="submit" id="f_update" name="f_update" value="Update" />
+	</div>
+</div>
+
+<div id="friends" class="span-24 tspan-2 last">
+	<div class="prepend-8 span-16 last tspan-1">
+		<h1>Your contacts</h1>
+		<input type="submit" id="f_add" name="f_add" value="Add contacts!" />
+	</div>
+{.section Friends}
+	{.repeated section @}
+	<div class="friend prepend-8 span-16 last tspan-1">
+		<h2>{Name|html}</h2> 
+		<span class="email">{Email|html}</span>
+		<ul>
+			<li><a href="{AdminURL}/edit?s={Slot}">Edit</a> &middot;</li>
+			<li><a href="{AdminURL}/reinvite?s={Slot}">Resend your invite</a> &mdash;</li>
+			<li><span class="{StatusClass}">{StatusMsg}</span></li>
+		</ul>
+	</div>
+	{.end}
+{.or}
+	<div class="prepend-6 span-18 last tspan-1 bspan-2">
+		<p>You've added no friends yet. Why don't you <a href="{AdminURL}/add">add some</a>?</p>
+	</div>
+{.end}
+</div>
+
+<div class="span-24 tspan-2 last">&nbsp;</div>

@@ -1,0 +1,48 @@
+
+<div class="prepend-4 span-16 append-4 last">
+	<h1>Add contact</h1>
+	<h3>Pick some name for you friend:</h3>
+	<input id="f_name" name="f_name" type="text" value="" size="30" maxlength="100" tabindex="1"><br>
+	<span class="subdue">This is for your convenience.</span>
+</div>
+
+<div class="prepend-4 span-16 append-4 last tspan-1">
+	<h3>Tells us their email:</h3>
+	<input id="f_email" name="f_email" type="text" value="" size="30" maxlength="100" tabindex="2"><br>
+</div>
+
+<div class="prepend-6 span-12 append-6 tspan-2 last">
+	<center>
+	<input type="submit" id="f_ok" name="f_ok" value="Alright. Connect us!" tabindex="3"/>
+	<input type="submit" id="f_cancel" name="f_cancel" value="Never mind" tabindex="4"/>
+	<br>
+	<br>
+	<span id="wait" class="subdue hide">Wait a few seconds, we are doing some crypto computations ...</span>
+	<span id="error" class="subdue hide">Sorry mate. There was an error! 
+		<a href="{AdminURL}">Wanna go back to admin screen?</a></span>
+	</center>
+</div>
+
+<div id="invite" class="span-24 last hide">
+<div class="prepend-6 span-12 append-6 tspan-1 bspan-1 last">
+	<a id="great" href="#great"></a>
+	<h3>Great!</h3>
+	<p>Email the message below to your friend. Feel free to change the text. Just don't mess
+	with the links.</p>
+</div>
+
+<div class="prepend-4 span-16 append-4 tspan-2 last">
+	<textarea id="f_msg" name="f_msg" rows="24" cols="68" tabindex="5">
+	</textarea>
+</div>
+
+<div class="prepend-6 span-12 append-6 tspan-1 last">
+	<p>That's it for now. They will send you an email with a confirmation link. Expect that.</p>
+</div>
+
+<div class="prepend-6 span-12 append-6 tspan-1 bspan-2 last">
+	<center>
+	<input type="submit" id="f_done" name="f_done" value="Done!" tabindex="6" /> 
+	</center>
+</div>
+</div>

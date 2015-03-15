@@ -1,0 +1,18 @@
+body {
+	background-image: url("/static/castles4.jpg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+}
+
+.readonly {
+	color: #bbbbbb;
+}
+
+.disabled {
+	color: #a09080;
+}
+
+div.ro {
+	background: #eeeeee;
+	border: 2px solid #dfdfdf;
+}

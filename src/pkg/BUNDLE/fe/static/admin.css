@@ -1,0 +1,32 @@
+body {
+	background-image: url("/static/castles4.jpg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+}
+
+.friend {
+	//background-image: url("/static/rabbit.jpg");
+	//background-position: 130px 0px;
+	background-repeat: no-repeat;
+	height: 120px;
+	padding-top: 25px;
+}
+
+.friend h2 {
+	color: #9a7777;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+.friend ul { 
+	margin-top: 5px;
+}
+
+.friend li { 
+	display: inline;
+}
+
+#friends {
+	background: #f8f8f8;
+	border: 2px solid #f0f0f0;
+}

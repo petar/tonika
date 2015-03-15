@@ -1,0 +1,68 @@
+
+<div class="prepend-4 span-16 append-4 last">
+	<h1>Accept invitation?</h1>
+	<h3>Invitation from:</h3>
+	<input type="hidden" id="f_slot" name="f_slot" value="{Slot}" />
+	<input type="hidden" id="f_dialkey" name="f_dialkey" value="{DialKey}" />
+	<input type="hidden" id="f_sigkey" name="f_sigkey" value="{SigKey}" />
+	<input id="f_name" name="f_name" type="text" value="{Name}" size="30" maxlength="100" tabindex="1"><br>
+</div>
+
+<div class="prepend-4 span-16 append-4 last tspan-1">
+	<h3>Their email is:</h3>
+	<input id="f_email" name="f_email" type="text" value="{Email}" size="30" maxlength="100" tabindex="2"><br>
+</div>
+
+<div class="prepend-4 span-16 append-4 last tspan-1">
+	<h3>Their address:</h3>
+	<input id="f_addr" name="f_addr" type="text" value="{Addr}" size="30" maxlength="100" tabindex="3"><br>
+</div>
+
+<div class="prepend-6 span-12 append-6 tspan-2 last">
+	<center>
+	<input type="submit" id="f_yes" name="f_yes" value="Accept!" tabindex="4"/>
+	<input type="submit" class="red" id="f_no" name="f_no" value="Don't accept" tabindex="5"/>
+	<br>
+	<br>
+	<span id="wait" class="subdue hide">Wait a few seconds, we are doing some crypto computations ...</span>
+	<span id="error" class="subdue hide">Sorry mate. There was an error.
+		<a href="{AdminURL}">Shall we go back to admin screen?</a></span>
+	</center>
+</div>
+
+<div id="invite" class="span-24 last hide">
+<div class="prepend-6 span-12 append-6 tspan-1 bspan-1 last">
+	<a id="great" href="#great"></a>
+	<h3>Great!</h3>
+	<p>You will have to send them an invite as well. (Trust is a 2-way relationship.) Find it
+	below:</p>
+</div>
+
+<div class="prepend-4 span-16 append-4 tspan-2 last">
+	<textarea id="f_invite" name="f_invite" rows="24" cols="68" tabindex="6">
+	</textarea>
+</div>
+
+<div class="prepend-6 span-12 append-6 tspan-1 last">
+	<p>That's it for now. You don't have to do anything else. When they accept your invite, you
+	will be automatically connected.</p>
+</div>
+</div>
+
+<div id="notice" class="span-24 last hide">
+<div class="prepend-6 span-12 append-6 tspan-1 bspan-1 last">
+	<a id="hm" href="#hm"></a>
+	<h3>Hm...</h3>
+	<p id="f_err"></p>
+</div>
+</div>
+
+<div id="done" class="span-24 last hide">
+<div class="prepend-6 span-12 append-6 tspan-1 bspan-2 last">
+	<center>
+	<input type="submit" id="f_done" name="f_done" value="Done!" tabindex="7" /> 
+	</center>
+</div>
+</div>
+
+

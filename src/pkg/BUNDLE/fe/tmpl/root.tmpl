@@ -1,0 +1,43 @@
+
+<div class="span-6">
+	<div class="span-5 quick last tspan-1">
+		<ul>
+			<li><a href="{AdminURL}/neighbors">Neighborhood</a></li>
+			<li><a href="{AdminURL}/">Admin</a></li>
+			<li><a href="{AdminURL}/add">Add contact</a></li>
+			<li><a href="{AdminURL}/monitor">Monitor</a></li>
+			<li><a href="{AdminURL}/bug">Report a bug</a></li>
+		</ul>
+	</div>
+	<div class="span-5 quick2 last tspan-1">
+		<ul>
+		    <li><a href="http://5ttt.org"><img src="/static/logo-icon.png" /> Tonika</a></li>
+		    <li><a href="http://blogtonika.wordpress.com"><img src="/static/wp-icon.png" /> Blog Tonika</a></li>
+		    <li><a href="http://twitter.com/5ttt"><img src="/static/tw2-icon.png" /> Follow on Twitter</a></li>
+		    <li><a href="http://www.facebook.com/pages/Tonika/119725644714946"><img src="/static/fb-icon.png" /> Facebook page</a></li>
+		    <li><a href="http://groups.google.com/group/5ttt"><img src="/static/gg-icon.png" /> Google group</a></li>
+		</ul>
+	</div>
+</div>
+<div class="prepend-2 span-16 last">
+{.section Links}
+	<div class="dock span-12 tspan-1 last">
+	<h1>Your neighborhood of friends</h1>
+	<p><span class="subdue">Friends that are not currently reachable are not
+	clickable.</span></p>
+	<div id="home" class="wrapper">
+	<div id="live">
+	{Links}
+	</div>
+	</div>
+
+	<div class="dock span-12 tspan-2 last">
+	<p class="subdue">Did you want to <a href="{MyURL}">see your own page</a>?
+	</div>
+	</div>
+{.or}
+	<div class="prepend-2 span-16 last tspan-1 bspan-2">
+		<p>You've added no friends yet. Why don't you <a href="{AdminURL}/add">add some</a>?</p>
+	</div>
+{.end}
+</div>

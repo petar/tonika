@@ -1,0 +1,308 @@
+@font-face {
+	font-family: HFont;
+	src: url(/MegalopolisExtra.otf) format("opentype");
+}
+
+/*
+@font-face {
+	font-family: TextFont;
+	//src: url(/Calluna-Regular.otf) format("opentype");
+	src: url(/FertigoPro.otf) format("opentype");
+}
+*/
+
+@font-face {
+	font-family: MotoFont;
+	src: url(/MegalopolisExtra.otf) format("opentype");
+}
+
+/* CSS for the Tonika web site */
+
+body, p, ul, ol, div, li, table, span, tr, td, form, * {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-color: #fff;
+	color: #101010;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+
+input[type="text"], input[type="password"], textarea
+{
+	padding: 5px 7px;
+	border: 1px solid #777;
+	border-color: #777 #555 #555 #777;
+	background: #F6F9EE url("/fieldbg.gif") repeat-x top;
+	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+}
+
+input[type="text"]:focus {
+	border: 1px solid #000;
+	background-color: #fff;
+}
+
+input[type="submit"] {
+	border: 1px double #86B05D;
+	border-color: #ff9911 #aa5511 #aa5511 #ff9911;
+	background-color: #e87711;
+	color: #fff;
+	padding: 4px 10px;
+	font-size: 16px;
+	margin-top: 12px;
+}
+
+input[type="submit"]:hover {
+	border-color: #eeee00 #aa3 #aa3 #eeee00;
+	background-color: #ffcc00;
+	color: #fff;
+}
+
+div#page {
+	width: 1200px;
+	padding: 0px;
+	margin: 0;
+}
+
+.wiggle {
+	position: relative;
+}
+
+div#logo {
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
+	//position: relative;
+	//float: left;
+	//top: 0px;
+	//left: 50px;
+	//border: 1px dotted #aaa;
+	padding: 0;
+	vertical-align: top;
+}
+
+div#spread {
+	display: block;
+	text-align: center;
+}
+.wgg {
+	position: relative;
+}
+.toncolor {
+	font: inherit;
+	color: #ff8800;
+}
+
+#content {
+	display: inline-block;
+	margin: auto auto;
+	margin-top: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 600px;
+	//border: 1px dotted #aaa;
+}
+
+#livebar {
+	vertical-align: top;
+	display: inline-block;
+	margin: auto auto;
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 10px;
+	//width: 230px;
+	padding: 6px;
+	background: #e0e0e0;
+	border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+}
+
+#livebar #twitter-feed a {
+	text-decoration: none;
+	border: none;
+}
+
+#footer {
+	color: #808080;
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	padding-top: 30px;
+}
+
+#footer #copy {
+	color: #808080;
+	text-align: center;
+	background: none;
+}
+
+.entry {
+	margin-bottom: 70px;
+}
+
+.entry, .entry p, .entry li  {
+	font-family: Helvetica, Arial, sans-serif;
+	vertical-align: text-bottom;
+	font-size: 16px;
+	line-height: 1.4em;
+	letter-spacing: -0.0em;
+	color: #555555;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: #ee0055;
+	background: none;
+}
+
+.entry h1 {
+	font-family: HFont, Georgia, "Times New Roman", serif;
+	font-size: 35px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	margin: 0px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	padding: 0;
+	color: #ee0055;
+	float: left;
+}
+
+.moto, .moto p {
+	color: #333;
+	font-family: MotoFont, Georgia, sans-serif;
+	font-size: 43px;
+	font-style: italic;
+	text-align: center;
+	color: #a0a0a0;
+	letter-spacing: 0.0em;
+}
+
+em {
+	color: inherit;
+	font-weight: bold;
+}
+
+a, a:link {
+	font: inherit;
+	//font-style: italic;
+	letter-spacing: inherit;
+	color: #44bb11;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #44bb11;
+}
+
+a:hover {
+	border-bottom: 1px dotted #44bb11;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin-bottom: 20px;
+}
+
+#footer a, #footer a:link {
+	font-style: normal;
+	background: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+#footer a:visited {
+	font-style: normal;
+	background: none;
+	color: inherit;
+}
+
+#footer a:hover {
+	font-style: normal;
+	background: none;
+	text-decoration: underline;
+	border: 0;
+}
+
+/* logo */
+
+#logo ul, #logo p {
+	margin-top: 30px;
+}
+
+#logo p {
+	font-family: 'Arial Rounded MT Bold', sans-serif;
+	text-align: center;
+	font-size: 14px;
+	color: #aaaaaa;
+}
+
+#logo a, #logo a:link {
+	font-size: 15px;
+	font-style: normal;
+	background: none;
+	color: #a0a0a0;
+	text-decoration: none;
+}
+
+#logo a:visited {
+	font-size: 15px;
+	font-style: normal;
+	background: none;
+	color: #a0a0a0;
+}
+
+#logo a:hover {
+	font-size: 15px;
+	font-style: normal;
+	background: none;
+	text-decoration: none;
+	border: 0;
+}
+
+#logo ul li a img {
+	position: relative;
+	top: 10px;
+	margin-right: 5px;
+	border: 0px;
+}
+
+#logo li {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+#logo #share {
+	width: 140px;
+	margin: auto auto;
+	margin-top: 50px;
+	color: #d0d0d0;
+}
+
+#logo #share ul {
+	margin: auto auto;
+	padding: 0;
+}
+
+#logo #share li {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+
+#share li {
+	position: relative;
+}

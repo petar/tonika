@@ -1,0 +1,203 @@
+/* CSS for the Tonika web site */
+
+body, p, ul, ol, div, li, table, span, tr, td, form, * {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 17px;
+	background-color: #ffffff;
+	color: #101010;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+
+div#page {
+	width: 800px;
+	padding: 0px;
+	margin: 0;
+	margin:auto auto;
+	//border: 1px dotted red;
+}
+
+div#logo {
+	margin: auto auto;
+	margin-top: 50px;
+	padding: 0;
+	vertical-align: top;
+	text-align: center;
+	//border: 1px dotted black;
+}
+
+#content {
+	width: 600px;
+	margin: auto auto;
+	margin-top: 40px;
+	//border: 1px dotted #aaa;
+}
+
+.entry {
+	margin-bottom: 70px;
+}
+
+.entry, .entry p, .entry li  {
+	font-family: "Georgia", Helvetica, Arial, sans-serif;
+	vertical-align: text-bottom;
+	font-size: 17px;
+	line-height: 1.4em;
+	letter-spacing: -0.04em;
+	color: #606060;
+}
+
+.entry h1 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 35px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	line-height: 1.2em;
+	margin: 0px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 25px;
+	padding: 0;
+	color: #55cc00;
+	text-align: center;
+}
+
+.moto, .moto p {
+	color: #ccccdd;
+	font-size: 21px;
+	font-style: italic;
+	text-align: center;
+}
+
+em {
+	color: inherit;
+	font-weight: bold;
+}
+
+a, a:link {
+	font-style: italic;
+	color: #bbaa88;
+	text-decoration: none;
+}
+
+a:visited {
+	font-style: italic;
+	color: #bbaa88;
+}
+
+a:hover {
+	font-style: italic;
+	border-bottom: 1px dotted #bbaa88;
+}
+
+ul {
+	list-style: square;
+}
+
+li {
+	margin-bottom: 20px;
+}
+
+#footer {
+	margin:auto auto;
+	text-align: center;
+}
+
+#footer, #footer * {
+	font-size: 15px;
+	color: #cccccc;
+}
+
+#footer a, #footer a:link {
+	font-style: normal;
+	background: none;
+	color: #dddddd;
+	text-decoration: none;
+}
+
+#footer a:visited {
+	font-style: normal;
+	background: none;
+	color: #dddddd;
+}
+
+#footer a:hover {
+	font-style: normal;
+	background: none;
+	text-decoration: underline;
+	border: 0;
+}
+
+/* logo */
+
+#logo ul, #logo p {
+	margin-top: 30px;
+}
+
+#logo p {
+	font-style: italic;
+	text-align: center;
+	font-size: 15px;
+	color: #aaaaaa;
+}
+
+#logo a, #logo a:link {
+	font-size: 15px;
+	font-style: normal;
+	background: none;
+	color: #a0a0a0;
+	text-decoration: none;
+}
+
+#logo a:visited {
+	font-size: 15px;
+	font-style: normal;
+	background: none;
+	color: #a0a0a0;
+}
+
+#logo a:hover {
+	font-size: 15px;
+	font-style: normal;
+	background: none;
+	text-decoration: none;
+	border: 0;
+}
+
+#logo ul li a img {
+	position: relative;
+	top: 10px;
+	margin-right: 5px;
+	border: 0px;
+}
+
+#logo li {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+#logo #share {
+	width: 140px;
+	margin: auto auto;
+	margin-top: 50px;
+	color: #d0d0d0;
+}
+
+#logo #share ul {
+	margin: auto auto;
+	padding: 0;
+}
+
+#logo #share li {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+
+#share li {
+	position: relative;
+}

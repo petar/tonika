@@ -1,0 +1,79 @@
+
+<div class="prepend-4 span-16 append-4 last">
+	<h1>Edit contact</h1>
+	<h3>Name:</h3>
+	<input type="hidden" id="f_slot" name="f_slot" value="{Slot}" />
+	<input id="f_name" name="f_name" type="text" value="{Name}" size="30" maxlength="100" tabindex="1"><br>
+	<span class="subdue">Feel free to change this. It is for your convenience.</span>
+</div>
+
+<div class="prepend-4 span-16 append-4 last tspan-1">
+	<h3>Email:</h3>
+	<input id="f_email" name="f_email" type="text" value="{Email}" size="30" maxlength="100" tabindex="2"><br>
+</div>
+
+<div class="prepend-4 span-16 append-4 last tspan-1">
+	<h3>Addr:</h3>
+	<input id="f_addr" name="f_addr" type="text" value="{Addr}" size="30" maxlength="100" tabindex="2"><br>
+	<span class="subdue">If you know the address and port of your contact,
+	enter it here. Some examples:
+	<span class="code">myurl.com:666</span>,
+	<span class="code">1.2.3.4:666</span>,
+	<span class="code">[de:ad:be:ef::ca:fe]:80</span> (this is IPv6).
+	Currently only one address/port can be entered. Do not use a comma-separated list.
+	</span>
+</div>
+
+<div class="prepend-6 span-12 append-6 tspan-2 last">
+	<center>
+	<input type="submit" id="f_update" name="f_update" value="Update" tabindex="3"/>
+	<input type="submit" id="f_cancel" name="f_cancel" value="Never mind" tabindex="4"/>
+	</center>
+</div>
+
+<div class="prepend-6 span-12 append-6 tspan-2 last">
+	<p>If you want to disconnect from this contact altogether, press this button:
+	<center>
+	<input class="red" type="submit" id="f_revoke" name="f_revoke" value="Revoke!" tabindex="5"/>
+	</center>
+</div>
+
+<div class="span-24 last ro tspan-2 bspan-2">
+<div class="prepend-4 span-16 append-4 last tspan-2">
+	<h3 class="readonly">Id:</h3>
+	<input id="f_id" name="f_id" type="text" value="{Id}" size="30" maxlength="100" tabindex="2"><br>
+</div>
+<div class="prepend-4 span-16 append-4 last tspan-1">
+	<h3 class="readonly">Dial Key:</h3>
+	<input id="f_dk" name="f_dk" type="text" value="{DialKey}" size="30" maxlength="100" tabindex="2"><br>
+</div>
+<div class="prepend-4 span-16 append-4 last tspan-1">
+	<h3 class="readonly">Accept Key:</h3>
+	<input id="f_ak" name="f_ak" type="text" value="{AcceptKey}" size="30" maxlength="100" tabindex="2"><br>
+</div>
+<div class="prepend-4 span-16 append-4 last tspan-1">
+	<h3 class="readonly">Hello Key:</h3>
+	<textarea id="f_hk" name="f_hk" rows="8" cols="68" tabindex="4">
+	{HelloKey}
+	</textarea>
+</div>
+<div class="prepend-4 span-16 append-4 last tspan-1 bspan-2">
+	<h3 class="readonly">Signature Key:</h3>
+	<textarea id="f_sk" name="f_sk" rows="3" cols="68" tabindex="4">
+	{SigKey}
+	</textarea>
+</div>
+</div>
+
+
+<div id="invite" class="span-24 last hide">
+<div class="prepend-6 span-12 append-6 tspan-1 bspan-1 last">
+	<a id="great" href="">&nbsp;</a>
+	<p>This is the invitation message, in case you need to resend it.</p>
+</div>
+
+<div class="prepend-4 span-16 append-4 tspan-2 last">
+	<textarea id="f_msg" name="f_msg" rows="30" cols="68" tabindex="4">
+	</textarea>
+</div>
+</div>

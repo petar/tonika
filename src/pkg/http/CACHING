@@ -1,0 +1,21 @@
+
+
+(*) If time checks ok, use cachsed copy, else validate, else fetch
+
+(*) Cache-Control: no-store, no-cache, must-revalidate
+
+Caching.MayCache() bool
+Caching.MustRevalidate() bool
+Caching.MustWarn() bool
+
+(*) Servers specify expiration using Expires, or Cache-Control: max-age
+
+(*) Origin servers should always send the Date header to specify the time of sending
+
+(Date:)HTTP/1.1 requires origin servers to send a Date header, if possible, with every response, giving the
+time at which the response was generated (see section 14.18). We use the term "date_value" to denote
+the value of the Date header, in a form appropriate for arithmetic operations.
+
+(Age:) HTTP/1.1 uses the Age response-header to convey the estimated age of the response message when
+obtained from a cache. The Age field value is the cache's estimate of the amount of time since the
+response was generated or revalidated by the origin server.
